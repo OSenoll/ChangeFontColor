@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stil Değiştirme</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Stil Değiştirme</h1>
+        
+        <form id="stilForm">
+            <label for="renk_secimi">Renk Seçimi</label>
+            <select id="renk_secimi">
+                <option value="black">Siyah</option>
+                <option value="pink">Pembe</option>
+                <option value="green">Yeşil</option>
+                <option value="blue">Mavi</option>
+                <option value="orange">Turuncu</option>
+                <option value="yellow">Sarı</option>
+                <option value="grey">Gri</option>
+
+            </select>
+
+            <label for="yazi_tipi">Yazı Tipi</label>
+            <select id="yazi_tipi">
+                <option value="arial">Arial</option>
+                <option value="times">Times</option>
+                <option value="georgia">Georgia</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Tahoma">Tahoma</option>
+
+            </select>
+
+            <label for="yazi_boyutu">Yazı Boyutu:</label>
+            <input type="text" id="yazi_boyutu" placeholder="Yazı boyutunu girin">
+
+            <button type="button" onclick="stilDegistir()">Stili uygula </button>
+        </form>
+
+        <div class="sonuc" id="sonuc">Nişantaşı Üniversitesi</div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
